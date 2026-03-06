@@ -36,10 +36,14 @@
 <body>
   <h1>Dice Roller!</h1>
   <div>
-    <button id="btn6">D6</button>
-    <button id="btn10">D10</button>
-    <button id="btn20">D20</button>
-  </div>
+  <button id="btn4" style="background-color: orchid;">D4</button>
+  <button id="btn6">D6</button>
+  <button id="btn8" style="background-color: orange;">D8</button>
+  <button id="btn10">D10</button>
+  <button id="btn12" style="background-color: slateblue;">D12</button>
+  <button id="btn20">D20</button>
+  <button id="btn100" style="background-color: black;">D100</button>
+</div>
 
   <hr>
 
@@ -57,17 +61,33 @@
       numberSpan.innerHTML = number;
     }
 
-    btn6.onclick = function(){
-      showRandomInt(1, 6);
-    };
+    btn4.onclick = function(){
+  showRandomInt(1, 4);
+};
 
-    btn10.onclick = function(){
-      showRandomInt(1, 10);
-    };
+btn6.onclick = function(){
+  showRandomInt(1, 6);
+};
 
-    btn20.onclick = function(){
-      showRandomInt(1, 20);
-    };
+btn8.onclick = function(){
+  showRandomInt(1, 8);
+};
+
+btn10.onclick = function(){
+  showRandomInt(1, 10);
+};
+
+btn12.onclick = function(){
+  showRandomInt(1, 12);
+};
+
+btn20.onclick = function(){
+  showRandomInt(1, 20);
+};
+
+btn100.onclick = function(){
+  showRandomInt(1, 100);
+};
   </script>
 </body>
 </html>
